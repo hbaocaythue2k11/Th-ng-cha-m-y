@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGB VN Hub | Roblox Scripts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #050505; color: #e5e7eb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .neon-border { border: 1px solid rgba(59, 130, 246, 0.5); box-shadow: 0 0 15px rgba(59, 130, 246, 0.2); }
+        .rainbow-text {
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: rainbow 5s linear infinite;
+        }
+        @keyframes rainbow { to { background-position: 200% center; } }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 border-b border-gray-800 flex justify-between items-center bg-black/50 backdrop-blur-md sticky top-0 z-50">
+        <h1 class="text-3xl font-black rainbow-text">HGB VN HUB</h1>
+        <div class="flex gap-6 items-center">
+            <a href="https://discord.gg/8UXuUnhX" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full text-sm font-bold transition">
+                <i class="fab fa-discord"></i> DISCORD
+            </a>
+        </div>
+    </nav>
+
+    <div class="py-16 text-center">
+        <h2 class="text-4xl font-bold mb-4">Hệ Thống Script Roblox Tối Ưu</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Chia sẻ các bản script Blox Fruits, King Legacy miễn phí và an toàn nhất.</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
+        
+        <div class="neon-border bg-gray-900/50 p-6 rounded-2xl">
+            <div class="h-40 bg-blue-900/20 rounded-lg mb-4 flex items-center justify-center border border-dashed border-blue-500">
+                <i class="fas fa-code text-4xl text-blue-500"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Blox Fruits - Auto Farm</h3>
+            <p class="text-gray-400 text-sm mb-6">Tự động gom quái, làm nhiệm vụ, và săn boss cực nhanh không lag.</p>
+            <button onclick="copyScript('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/hbaocaythue/main/script.lua\'))()')" 
+                    class="w-full bg-blue-600 hover:bg-blue-400 text-white font-bold py-3 rounded-xl transition duration-300">
+                COPY SCRIPT
+            </button>
+        </div>
+
+        <div class="neon-border bg-gray-900/50 p-6 rounded-2xl">
+            <div class="h-40 bg-purple-900/20 rounded-lg mb-4 flex items-center justify-center border border-dashed border-purple-500">
+                <i class="fas fa-bolt text-4xl text-purple-500"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Dịch Vụ Cày Thuê</h3>
+            <p class="text-gray-400 text-sm mb-6">Up V4 tộc, cày Beli, Level giá rẻ. Liên hệ Admin qua Discord.</p>
+            <a href="https://discord.gg/8UXuUnhX" target="_blank" class="block text-center w-full bg-purple-600 hover:bg-purple-400 text-white font-bold py-3 rounded-xl transition duration-300">
+                LIÊN HỆ NGAY
+            </a>
+        </div>
+
+    </div>
+
+    <footer class="py-10 text-center border-t border-gray-800">
+        <p class="text-gray-600 text-sm">© 2026 Designed by <span class="rainbow-text font-bold">hbaocaythue</span></p>
+    </footer>
+
+    <script>
+        function copyScript(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Đã copy script! Bạn chỉ cần dán vào Executor trong game.");
+            });
+        }
+    </script>
+</body>
+</html>
